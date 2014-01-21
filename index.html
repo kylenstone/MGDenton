@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Change Specific Text</title>
+	
+
+	<style type="text/css">
+
+	span{
+    color: red;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+div, p, section{
+    padding: 10px 0;
+}
+	</style>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+$document.ready(function() {
+		$('div, p').each(function(){
+		var inspire = $(this).text().replace(/inspire /g,"<span>inspire </span>");
+		$(this).html(inspire);
+		});
+});
+
+</script>
+
+</head>
+<body>
+
+<div><p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash going to the loo arse cheers inspire cheers mate bloody hell crumpets harry potter bangers and mash hello chaps fish and chips Jimmy inspires</p></div>
+
+<p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash</p>
+
+<section>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash
+    
+<p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash</p>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
