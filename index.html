@@ -8,37 +8,44 @@
 	<style type="text/css">
 
 	span{
-    color: red;
-    font-size: 10px;
-    font-family: sans-serif;
-}
-div, p, section{
-    padding: 10px 0;
-}
+    	color: red;
+    	font-size: 10px;
+    	font-family: sans-serif;
+	}
+
+	p {
+    	padding: 10px 10px;
+    	margin: 10px;
+	}
+
 	</style>
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
 
-$document.ready(function() {
-		$('div, p').each(function(){
-		var inspire = $(this).text().replace(/inspire /g,"<span>inspire </span>");
-		$(this).html(inspire);
-		});
+$(document).ready(function() {
+	$('.replace').each(function(){
+			console.log('working');
+	    var inspire = $(this).text().replace(/[Ii]nspire /g,"<span>inspire </span>");
+	    $(this).html(inspire);
+	});
 });
 
 </script>
 
 </head>
 <body>
+<div class="replace">
+<p>
+inspire Inspire inspire rule inspire lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash going to the loo arse cheers inspire cheers mate bloody hell crumpets harry potter bangers and mash hello chaps fish and chips Jimmy inspires</p>
 
-<div><p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash going to the loo arse cheers inspire cheers mate bloody hell crumpets harry potter bangers and mash hello chaps fish and chips Jimmy inspires</p></div>
-
-<p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash</p>
+<p>inspire Ipsum rule britannia lorem fish and chips Inspire going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash</p>
 
 <section>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash
     
 <p>inspire Ipsum rule britannia lorem fish and chips ipsum going to the loo cheers mate crumpets mate off to the pub good day inspire harry potter cup of tea cup of tea crumpets God save the queen jolly good show rule britannia cheerio! bangers and mash</p>
+
+</div>
 </section>
 
 
